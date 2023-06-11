@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: #d1cbd1;
+}
+
+.main-view-container {
+    background-color: #d1cbd1;
+    height: fit-content;
+
+}
+
+.main-view {
+    /* background: linear-gradient(90deg, rgba(255, 106, 239, 1) 0%, rgba(248, 88, 221, 1) 0%, rgba(252, 226, 46, 1) 100%); */
+    background: linear-gradient(90deg, rgba(239, 98, 160, 1) 0%, rgba(248, 134, 134, 1) 50%, rgba(245, 209, 61, 1) 100%);
+    height: 110vh;
+}
+
+.main-view_background {
+    background-image: url('img1.jpg');
+    background-position: center/center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.text-container {
+    position: absolute;
+    top: 55%;
+    left: 42%;
+    transform: translate(-80%, -50%);
+    background-color: rgba(251, 135, 122, 0.7);
+    padding: 30px 180px 30px 50px;
+    width: 24%;
+    color: white;
+}
+
+.text-container h1 {
+    font-size: 40px;
+    margin: 15px 0px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.main-view_header {
+    background-color: white;
+    /* justify-content: center; */
+    justify-content: space-between;
+    padding: 2px 10px 2px 222px;
+    align-items: center;
+    height: 59px;
+}
+
+.navbar ul {
+    gap: 50px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+
+    padding: 5px 10px;
+    margin: 0px 10px;
+    text-decoration-line: none;
+    color: #080808;
+    font-size: 18px;
+    font-family: 'Zilla Slab', serif;
+    transform: scaleX(0.958011);
+}
+
+.navbar ul li a:hover {
+    color: black;
+    background-color: aliceblue;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.icons-container {
+    margin-left: 100px;
+}
+
+.call-icon {
+    border: 2px solid;
+    padding: 4px 5px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.cart-icon {
+    border: 4px solid white;
+    padding: 2px;
+    /* border-radius: 20px; */
+}
+
+
+/* section */
+
+.main-view-section {
+    /* background: linear-gradient(90deg, rgba(255, 106, 239, 1) 0%, rgba(248, 88, 221, 1) 0%, rgba(252, 226, 46, 1) 100%); */
+    background: linear-gradient(90deg, rgba(239, 98, 160, 1) 0%, rgba(248, 134, 134, 1) 50%, rgba(245, 209, 61, 1) 100%);
+    margin-top: 20px;
+    height: 100vh;
+    align-items: center;
+
+}
+
+
+.heading {
+    text-align: center;
+    color: #fff;
+    font-size: larger;
+    margin-top: 5px;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+
+/* card */
+.card-container {
+    /* margin: 0px 200px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 140px;
+    margin: 80px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid;
+    width: 280px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+    padding: 12px 22px;
+    border-radius: 0px 70px 0px 70px;
+    border: none;
+
+}
+
+.card h3 {
+    font-size: 25px;
+    margin: 12px;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 1px;
+}
+
+.card p {
+    font-size: 19px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.card img {
+    margin-top: 10px;
+    width: 280px;
+    height: 280px;
+    border-radius: 0px 70px 0px 0px;
+
+}
+
+.order-btn button {
+    font-size: 20px;
+    font-weight: 600;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background: rgb(255, 200, 181);
+}
+
+
+/* utility */
+.d-flex {
+    display: flex;
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap10 {
+    gap: 10px;
+}
+
+.gap30 {
+    gap: 30px;
+}
+
+.space3 {
+    letter-spacing: 3px;
+}
+
+.space4 {
+    letter-spacing: 4px;
+}
+
+
+
+
+@media screen and (max-width: 1250px) {
+    .main-view-container {
+        width: 1450px;
+
+    }
+
+    .main-view {
+        width: 100%;
+    }
+
+    .card-container {
+        gap: 100px;
+        margin: 30px;
+    }
+
+    .main-view_header {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        gap: 40px;
+        margin-right: 50px;
+    }
+
+    .navbar ul li a {
+
+        padding: 0px 0px;
+        margin: 0px 10px;
+        /* font-size:13px; */
+    }
+
+    .icons-container {
+        margin-left: 150px;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-view-section {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        gap: 80px;
+        margin-top: 20px;
+        height: 130vh;
+        /* justify-content: center; */
+        align-items: center;
+
+    }
+
+    .heading h1 {
+        margin-top: 20px;
+    }
+
+    .order-btn button {
+        width: 200px;
+        font-size: 28px;
+        height: 66px;
+        text-align: center;
+    }
+}
